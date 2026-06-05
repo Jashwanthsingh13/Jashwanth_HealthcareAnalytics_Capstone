@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Patients";
+}
+
+<h2>Patients</h2>
+
+<a asp-action="Create"
+   class="btn btn-primary">
+   Add Patient
+</a>
+
+<hr />
+
+<button id="loadPatients"
+        class="btn btn-success">
+    Load Patients
+</button>
+
+<br />
+<br />
+
+<div id="patientList"></div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $("#loadPatients").click(function () {
+
+        $.ajax({
+            url: '/Patient/GetPatients',
+            type: 'GET',
+            success: function (result) {
+                $("#patientList").html(result);
+            },
+            error: function () {
+                alert("Error loading patients.");
+            }
+        });
+
+    });
+</script>
+

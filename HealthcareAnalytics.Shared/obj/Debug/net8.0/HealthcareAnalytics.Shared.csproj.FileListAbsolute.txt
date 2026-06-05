@@ -1,0 +1,12 @@
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\bin\Debug\net8.0\HealthcareAnalytics.Shared.deps.json
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\bin\Debug\net8.0\HealthcareAnalytics.Shared.dll
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\bin\Debug\net8.0\HealthcareAnalytics.Shared.pdb
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.AssemblyInfoInputs.cache
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.AssemblyInfo.cs
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.csproj.CoreCompileInputs.cache
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.sourcelink.json
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.dll
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\refint\HealthcareAnalytics.Shared.dll
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\HealthcareAnalytics.Shared.pdb
+C:\Users\santo\source\Wipro_NGA_.NET_AI_Angular_FSD\repos\HealthcareAnalyticsPlatform\HealthcareAnalytics.Shared\obj\Debug\net8.0\ref\HealthcareAnalytics.Shared.dll

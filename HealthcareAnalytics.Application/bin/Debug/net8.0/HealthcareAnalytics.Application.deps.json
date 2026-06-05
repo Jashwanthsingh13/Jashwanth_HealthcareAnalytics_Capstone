@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HealthcareAnalytics.Application/1.0.0": {
+        "dependencies": {
+          "HealthcareAnalytics.Domain": "1.0.0"
+        },
+        "runtime": {
+          "HealthcareAnalytics.Application.dll": {}
+        }
+      },
+      "HealthcareAnalytics.Domain/1.0.0": {
+        "runtime": {
+          "HealthcareAnalytics.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HealthcareAnalytics.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HealthcareAnalytics.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PqiSiUyIJATO04ElnrERq0bK1W5N84A/GbqH5sObW3w=",
+  "Source": "HealthcareAnalytics.API",
+  "BasePath": "_content/HealthcareAnalytics.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

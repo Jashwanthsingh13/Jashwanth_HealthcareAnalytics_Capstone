@@ -1,0 +1,26 @@
+@model IEnumerable<HealthcareAnalytics.MVC.Models.PatientViewModel>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Patient Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var patient in Model)
+        {
+            <tr>
+                <td>@patient.PatientId</td>
+                <td>@patient.FullName</td>
+                <td>@patient.Email</td>
+                <td>@patient.PhoneNumber</td>
+                <td>@patient.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>

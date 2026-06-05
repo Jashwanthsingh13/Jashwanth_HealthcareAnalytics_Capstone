@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HealthcareAnalytics.API\\Controllers",
+    "\\HealthcareAnalytics.Domain\\Entities",
+    "\\HealthcareAnalytics.MVC",
+    "\\HealthcareAnalytics.MVC\\Controllers",
+    "\\HealthcareAnalytics.MVC\\Views",
+    "\\HealthcareAnalytics.MVC\\Views\\Patient"
+  ],
+  "SelectedNode": "\\HealthcareAnalytics.Domain",
+  "PreviewInSolutionExplorer": false
+}
