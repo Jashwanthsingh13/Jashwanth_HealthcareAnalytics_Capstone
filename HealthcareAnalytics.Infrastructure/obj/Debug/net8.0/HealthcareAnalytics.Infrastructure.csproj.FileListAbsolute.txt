@@ -37,3 +37,4 @@ C:/Users/santo/source/Wipro_NGA_.NET_AI_Angular_FSD/repos/HealthcareAnalyticsPla
 /Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Infrastructure/obj/Debug/net8.0/HealthcareAnalytics.Infrastructure.pdb
 /Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Infrastructure/obj/Debug/net8.0/HealthcareAnalytics.Infrastructure.genruntimeconfig.cache
 /Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Infrastructure/obj/Debug/net8.0/ref/HealthcareAnalytics.Infrastructure.dll
+/Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Infrastructure/obj/Debug/net8.0/HealthcareAnalytics.Infrastructure.sourcelink.json

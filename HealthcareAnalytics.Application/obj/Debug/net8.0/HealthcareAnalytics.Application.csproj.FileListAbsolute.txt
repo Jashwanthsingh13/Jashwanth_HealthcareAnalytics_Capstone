@@ -29,3 +29,4 @@ C:/Users/santo/source/Wipro_NGA_.NET_AI_Angular_FSD/repos/HealthcareAnalyticsPla
 /Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Application/obj/Debug/net8.0/refint/HealthcareAnalytics.Application.dll
 /Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Application/obj/Debug/net8.0/HealthcareAnalytics.Application.pdb
 /Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Application/obj/Debug/net8.0/ref/HealthcareAnalytics.Application.dll
+/Users/jashwanthrajpurohith/Downloads/Jashwanth_HealthcareAnalytics_Capstone/HealthcareAnalytics.Application/obj/Debug/net8.0/HealthcareAnalytics.Application.sourcelink.json
