@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard">
+
+    <div class="hero">
+
+        <h1>Welcome to Your Dashboard</h1>
+
+        <p>
+            Manage patient care and analytics in one place
+        </p>
+
+        <div class="mt-4">
+
+            <a asp-controller="Patient"
+               asp-action="Create"
+               class="btn btn-primary">
+                Get Started
+            </a>
+
+            <a asp-controller="Patient"
+               asp-action="Index"
+               class="btn btn-outline-primary">
+                View Patients
+            </a>
+
+        </div>
+
+    </div>
+
+    <h2 class="section-title">
+        Key Metrics At a Glance
+    </h2>
+
+    <div class="metrics-grid">
+
+        <div class="metric-card">
+            <i class="bi bi-people-fill"></i>
+            <h3>5</h3>
+            <p>Total Patients</p>
+        </div>
+
+        <div class="metric-card">
+            <i class="bi bi-calendar-check"></i>
+            <h3>1</h3>
+            <p>Appointments</p>
+        </div>
+
+        <div class="metric-card">
+            <i class="bi bi-clipboard-check"></i>
+            <h3>0</h3>
+            <p>Pending Reviews</p>
+        </div>
+
+        <div class="metric-card">
+            <i class="bi bi-heart-pulse"></i>
+            <h3>94%</h3>
+            <p>Satisfaction</p>
+        </div>
+
+    </div>
+
+</div>

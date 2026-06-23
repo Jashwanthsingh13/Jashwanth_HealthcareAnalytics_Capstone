@@ -1,0 +1,164 @@
+
+
+@model IEnumerable<AppointmentViewModel>
+
+    @if(TempData["Success"] != null)
+{
+<div class="alert alert-success">
+
+@TempData["Success"]
+
+</div>
+}
+
+<div class="page-header">
+
+    <h2>
+        Appointment Management
+    </h2>
+
+    <a asp-action="Create"
+       class="btn btn-primary">
+
+        <i class="bi bi-plus-circle"></i>
+
+        Schedule Appointment
+
+    </a>
+
+</div>
+
+<div class="search-card">
+
+    <input type="text"
+           id="appointmentSearch"
+           class="form-control"
+           placeholder="Search Appointment..." />
+
+</div>
+
+<div class="table-card">
+
+<table class="table table-hover">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Patient</th>
+
+<th>Doctor</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AppointmentId</td>
+            <td>@item.PatientName</td>
+            <td>@item.DoctorName</td>
+            <td>@item.AppointmentDate</td>
+
+            <td>
+                @if(item.Status=="Completed")
+                {
+                    <span class="badge bg-success">Completed</span>
+                }
+                else if(item.Status=="Scheduled")
+                {
+                    <span class="badge bg-primary">Scheduled</span>
+                }
+                else
+                {
+                    <span class="badge bg-danger">Cancelled</span>
+                }
+            </td>
+
+            <td>
+                <a asp-action="Details"
+                   asp-route-id="@item.AppointmentId"
+                   class="btn btn-info btn-sm">
+                    View
+                </a>
+
+                <a asp-action="Edit"
+                   asp-route-id="@item.AppointmentId"
+                   class="btn btn-warning btn-sm">
+                    Edit
+                </a>
+
+                <a asp-action="Delete"
+                   asp-route-id="@item.AppointmentId"
+                   class="btn btn-danger btn-sm">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    }
+}
+else
+{
+    <tr>
+        <td colspan="6" class="text-center">
+            No appointments found
+        </td>
+    </tr>
+}
+
+</tbody>
+
+</table>
+
+</div>
+
+@section Scripts{
+
+<script>
+
+document
+.getElementById("appointmentSearch")
+.addEventListener(
+"keyup",
+function(){
+
+let value =
+this.value.toLowerCase();
+
+let rows =
+document.querySelectorAll(
+"tbody tr"
+);
+
+rows.forEach(row=>{
+
+let text =
+row.innerText.toLowerCase();
+
+row.style.display =
+text.includes(value)
+?
+""
+:
+"none";
+
+});
+
+});
+
+</script>
+
+}

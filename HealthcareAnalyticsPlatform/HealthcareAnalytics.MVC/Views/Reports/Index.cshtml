@@ -1,0 +1,113 @@
+<h2>
+Analytics Dashboard
+</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="card p-3 shadow">
+
+<h4>
+Patients By Gender
+</h4>
+
+<canvas id="genderChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card p-3 shadow">
+
+<h4>
+Appointment Status
+</h4>
+
+<canvas id="appointmentChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<br/>
+
+<div class="card p-3 shadow">
+
+<h4>
+Monthly Patient Growth
+</h4>
+
+<canvas id="growthChart"></canvas>
+
+</div>
+
+@section Scripts{
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+new Chart(
+document.getElementById('genderChart'),
+{
+type:'pie',
+data:{
+labels:[
+'Male',
+'Female'
+],
+datasets:[{
+data:[3,2]
+}]
+}
+});
+
+new Chart(
+document.getElementById('appointmentChart'),
+{
+type:'doughnut',
+data:{
+labels:[
+'Scheduled',
+'Completed',
+'Cancelled'
+],
+datasets:[{
+data:[8,5,2]
+}]
+}
+});
+
+new Chart(
+document.getElementById('growthChart'),
+{
+type:'bar',
+data:{
+labels:[
+'Jan',
+'Feb',
+'Mar',
+'Apr',
+'May'
+],
+datasets:[{
+label:'Patients',
+data:[
+10,
+15,
+20,
+18,
+25
+]
+}]
+}
+});
+
+</script>
+
+}

@@ -1,0 +1,63 @@
+@model HealthcareAnalytics.MVC.Models.SettingsViewModel
+
+<h2>
+    System Settings
+</h2>
+
+<div class="settings-grid">
+
+    <!-- Profile Card -->
+
+    <div class="settings-card">
+
+        <h4>
+            Administrator Profile
+        </h4>
+
+        <hr/>
+
+        <p>
+            <strong>Username:</strong>
+            @Model.Username
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            @Model.Email
+        </p>
+
+        <p>
+            <strong>Role:</strong>
+            @Model.Role
+        </p>
+
+    </div>
+
+    <!-- Statistics Card -->
+
+    <div class="settings-card">
+
+        <h4>
+            System Statistics
+        </h4>
+
+        <hr/>
+
+        <p>
+            Total Users :
+            @Model.TotalUsers
+        </p>
+
+        <p>
+            Total Doctors :
+            @Model.TotalDoctors
+        </p>
+
+        <p>
+            Total Patients :
+            @Model.TotalPatients
+        </p>
+
+    </div>
+
+</div>

@@ -1,0 +1,134 @@
+@model AppointmentViewModel
+
+<div class="form-card">
+
+    <h2>
+        Schedule Appointment
+    </h2>
+
+    <form asp-action="Create" method="post">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <label>Patient</label>
+
+                <select asp-for="PatientId"
+                        class="form-control">
+
+                    <option value="">
+                        Select Patient
+                    </option>
+
+                    <option value="1">
+                        John Smith
+                    </option>
+
+                    <option value="2">
+                        Jane Doe
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <label>Doctor</label>
+
+                <select asp-for="DoctorId"
+                        class="form-control">
+
+                    <option value="">
+                        Select Doctor
+                    </option>
+
+                    <option value="1">
+                        Dr Emily
+                    </option>
+
+                    <option value="2">
+                        Dr Michael
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <br />
+
+        <div>
+
+            <label>
+                Appointment Date
+            </label>
+
+            <input asp-for="AppointmentDate"
+                   type="datetime-local"
+                   class="form-control" />
+
+        </div>
+
+        <br />
+
+        <div>
+
+            <label>
+                Status
+            </label>
+
+            <select asp-for="Status"
+                    class="form-control">
+
+                <option value="Scheduled">
+                    Scheduled
+                </option>
+
+                <option value="Completed">
+                    Completed
+                </option>
+
+                <option value="Cancelled">
+                    Cancelled
+                </option>
+
+            </select>
+
+        </div>
+
+        <br />
+
+        <div>
+
+            <label>
+                Notes
+            </label>
+
+            <textarea asp-for="Notes"
+                      class="form-control">
+            </textarea>
+
+        </div>
+
+        <br />
+
+        <button type="submit"
+                class="btn btn-success">
+
+            Save Appointment
+
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+
+            Back
+
+        </a>
+
+    </form>
+
+</div>

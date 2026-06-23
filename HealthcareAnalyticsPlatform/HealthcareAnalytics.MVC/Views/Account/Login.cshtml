@@ -1,0 +1,56 @@
+@model LoginViewModel
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <h2>
+            Healthcare Analytics
+        </h2>
+
+        <form asp-action="Login">
+
+            <div class="mb-3">
+
+                <label>
+                    Username
+                </label>
+
+                <input asp-for="Username"
+                       class="form-control"/>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label>
+                    Password
+                </label>
+
+                <input asp-for="Password"
+                       type="password"
+                       class="form-control"/>
+
+            </div>
+
+            @if(ViewBag.Error!=null)
+            {
+                <div class="alert alert-danger">
+
+                    @ViewBag.Error
+
+                </div>
+            }
+
+            <button
+                class="btn btn-primary w-100">
+
+                Login
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

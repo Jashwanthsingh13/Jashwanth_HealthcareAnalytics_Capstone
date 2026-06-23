@@ -1,0 +1,247 @@
+@model HealthcareAnalytics.MVC.Models.DashboardViewModel
+
+<div class="dashboard-page">
+
+    <!-- Hero -->
+
+    <div class="hero-card">
+
+        @* <div class="hero-card"> *@
+
+    <h1>
+        Intelligent Healthcare Management Dashboard
+    </h1>
+
+    <p class="hero-subtitle">
+        Enhancing patient care through analytics and digital healthcare solutions
+    </p>
+
+    <p>
+        Centralize patient management, appointment scheduling,
+        doctor information, and healthcare reporting to improve
+        efficiency and quality of care.
+    </p>
+
+    <div class="mt-4">
+
+        <div class="mt-4">
+
+            <a asp-controller="Patient"
+               asp-action="Create"
+               class="btn btn-primary">
+
+                Get Started
+
+            </a>
+
+            <a asp-controller="Patient"
+               asp-action="Index"
+               class="btn btn-outline-primary">
+
+                View Patients
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- KPI Cards -->
+
+    <h3 class="section-title">
+        Key Metrics At a Glance
+    </h3>
+
+    <div class="metrics-grid">
+
+        <div class="metric-card">
+
+            <h2>
+                @Model.TotalPatients
+            </h2>
+
+            <p>Total Patients</p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h2>
+                @Model.TotalAppointments
+            </h2>
+
+            <p>Appointments</p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h2>
+                @Model.PendingReviews
+            </h2>
+
+            <p>Pending Reviews</p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h2>
+                @Model.Satisfaction%
+            </h2>
+
+            <p>Satisfaction</p>
+
+        </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+
+    <h3 class="section-title mt-5">
+        Quick Actions
+    </h3>
+    
+
+    <div class="quick-grid">
+
+        <a asp-controller="Appointment"
+           asp-action="Create"
+           class="quick-card">
+
+            Schedule Appointment
+
+        </a>
+
+        <a asp-controller="Patient"
+           asp-action="Create"
+           class="quick-card">
+
+            Add New Patient
+
+        </a>
+
+           <a asp-controller="Doctor"
+           asp-action="Index"
+           class="quick-card">
+           Doctors
+        </a>
+
+        <a asp-controller="Reports"
+           asp-action="Index"
+           class="quick-card">
+
+            View Reports
+
+        </a>
+
+
+
+        <a href="#"
+           class="quick-card">
+
+            Send Message
+
+        </a>
+
+        <a asp-controller="User"
+   asp-action="Index"
+   class="quick-card">
+
+Users
+
+</a>
+
+    </div>
+
+    <!-- Bottom Section -->
+
+    <div class="bottom-grid">
+
+        <!-- Activity Feed -->
+
+        <div class="activity-card">
+
+    <h4>
+
+        Recent Activity Feed
+
+    </h4>
+
+    <hr/>
+
+    @foreach(var item
+      in Model.Activities)
+    {
+        <div class="activity-item">
+
+            <strong>
+
+                @item.ActivityDescription
+
+            </strong>
+
+            <br/>
+
+            <small>
+
+                @item.ActivityDate
+
+            </small>
+
+        </div>
+
+        <hr/>
+    }
+
+</div>
+
+        <!-- Upcoming -->
+
+        <div class="activity-card">
+
+            <h4>
+                Upcoming Appointments
+            </h4>
+
+            <table class="table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Patient</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>John Smith</td>
+
+                        <td>Scheduled</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Jane Doe</td>
+
+                        <td>Confirmed</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

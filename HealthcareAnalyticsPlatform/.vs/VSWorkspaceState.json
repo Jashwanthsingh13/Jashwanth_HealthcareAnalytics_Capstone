@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HealthcareAnalytics.API",
+    "\\HealthcareAnalytics.Infrastructure",
+    "\\HealthcareAnalytics.Infrastructure\\Data",
+    "\\HealthcareAnalytics.MVC\\Views\\Dashboard"
+  ],
+  "SelectedNode": "\\HealthcareAnalytics.API",
+  "PreviewInSolutionExplorer": false
+}

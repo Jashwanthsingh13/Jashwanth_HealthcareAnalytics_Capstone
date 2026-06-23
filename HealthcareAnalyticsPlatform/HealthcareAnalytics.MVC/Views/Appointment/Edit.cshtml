@@ -1,0 +1,122 @@
+@model AppointmentViewModel
+
+<div class="form-card">
+
+<h2>
+Edit Appointment
+</h2>
+
+<form asp-action="Create">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<label>
+Patient
+</label>
+
+<select asp-for="PatientId"
+        class="form-control">
+
+<option>
+Select Patient
+</option>
+
+</select>
+
+</div>
+
+<div class="col-md-6">
+
+<label>
+Doctor
+</label>
+
+<select asp-for="DoctorId"
+        class="form-control">
+
+<option>
+Select Doctor
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<br/>
+
+<div>
+
+<label>
+Appointment Date
+</label>
+
+<input asp-for="AppointmentDate"
+       type="datetime-local"
+       class="form-control"/>
+
+</div>
+
+<br/>
+
+<div>
+
+<label>
+Status
+</label>
+
+<select asp-for="Status"
+        class="form-control">
+
+<option>
+Scheduled
+</option>
+
+<option>
+Completed
+</option>
+
+<option>
+Cancelled
+</option>
+
+</select>
+
+</div>
+
+<br/>
+
+<div>
+
+<label>
+Notes
+</label>
+
+<textarea asp-for="Notes"
+          class="form-control">
+
+</textarea>
+
+</div>
+
+<br/>
+
+<button class="btn btn-warning">
+
+Update Appointment
+
+</button>
+
+<a asp-action="Index"
+   class="btn btn-secondary">
+
+Back
+
+</a>
+
+</form>
+
+</div>
